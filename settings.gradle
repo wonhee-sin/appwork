@@ -15,3 +15,10 @@ dependencyResolutionManagement {
 rootProject.name = "MyApp"
 include ':app'
 include ':myapp2'
+include ':myapp2:myapplication'
+include ':myapplication'
+include ':myweb4'
+include ':myapplication2'
+include ':myapplication3'
+include ':myapplication4'
+include ':myapplication5'

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity4">
+
+    <!-- align 속성
+     top : 기준뷰의 윗 부분 정렬
+     baseline 기존 뷰의 텍스트 기준선을 정렬
+     -->
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onair"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wfwfefewfw"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/img1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="owigweogwhgiowei"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1010"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
